@@ -1,94 +1,227 @@
 <!DOCTYPE html>
 <html lang="en" data-dark>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Componentes</title>
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/scrollTopButton.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/componentes.css">
+  </head>
 
-<body>
-  <!-- ******* Responsive Wed Design ******* -->
-  <div id="youtube"></div>
-  <div id="gmaps"></div>
+  <body>
+    <header class="header">
+      <h1>Companentes JavaScript</h1>
+    </header>
+    <!-- ***** hamburger btn ***** -->
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <aside class="panel">
+      <nav class="menu">
+        <a href="#seccion1" data-scroll-spy>Responsive Wed Desing</a>
+        <a href="#seccion2" data-scroll-spy>Responsive Tester</a>
+        <a href="#seccion3" data-scroll-spy>Deteccion de Dispositivos</a>
+        <a href="#seccion4" data-scroll-spy>Deteccion de la camara wed</a>
+        <a href="#seccion5" data-scroll-spy>Geolocalizacion</a>
+        <a href="#seccion6" data-scroll-spy>Filtro de Imaganes</a>
+        <a href="#seccion7" data-scroll-spy>Sorteo Digital</a>
+        <a href="#seccion8" data-scroll-spy>Responsive Slider</a>
+        <a href="#seccion9" data-scroll-spy>Video Intiligente</a>
+        <a href="#seccion10" data-scroll-spy>Validaciones de Formularios</a>
+        <a href="#seccion11" data-scroll-spy>Voz Del Navegador</a>
+        <a href="#seccion12" data-scroll-spy>Cuenta Regresiva</a>
+        <a href="#seccion13" data-scroll-spy>Eventos del Teclado</a>
+      </nav>
+    </aside>
+    <main>
+      <section id="seccion1" class="section" data-scroll-spy>
+        <!-- ******* Responsive Wed Design ******* -->
+        <h2>Responsive Wed Desing</h2>
+        <div id="youtube"></div>
+        <div id="gmaps"></div>
+      </section>
+      <section id="seccion2" class="section" data-scroll-spy>
+        <!-- ******** Responsive Tester ******** -->
+        <h2>Responsive Tester</h2>
+        <form id="responsive-tester">
+          <input type="url" placeholder="URL" name="direccion" required>
+          <br>
+          <input type="text" placeholder="ancho" name="ancho" required>
+          <br>
+          <input type="text" placeholder="alto" name="alto" required>
+          <br>
+          <input type="submit" name="probar" value="Probar">
+          <input type="button" name="cerrar" value="Cerrar">
+        </form>
+      </section>
+      <section id="seccion3" class="section" data-scroll-spy>
+        <!-- ******* Deteccion de Dispositivos (User Agent) ******** -->
+        <h2>Deteccion de Dispositivos <br>(User Agent)</h2>
+        <div id="user-device"></div>
+      </section>
+      <section id="seccion4" class="section" data-scroll-spy>
+        <!-- ******* Deteccion de camara wed ******** -->
+        <h2>Deteccion de la camara wed</h2>
+        <video id="wedcam"></video>
+      </section>
+      <section id="seccion5" class="section" data-scroll-spy>
+        <!-- ******* Geolocalizacion ******** -->
+        <h2>Geolocalizacion</h2>
+        <div id="geolocation"></div>
+      </section>
+      <section id="seccion6" class="section" data-scroll-spy>
+        <!-- ******* Filtro de Imagenes ******** -->
+        <h2>Filtro de Imaganes</h2>
+        <input id="card-filter" type="search" placeholder="Buscar.."
+          class="card-filter">
+        <article class="cards">
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/natura" alt="Natura">
+            <figcaption>Natura</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/any" alt="Any">
+            <figcaption>Any</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/animals" alt="animals">
+            <figcaption>Animals</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/tech" alt="tech">
+            <figcaption>tech</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/people" alt="people">
+            <figcaption>People</figcaption>
+          </figure>
+        </article>
+      </section>
+      <section id="seccion7" class="section" data-scroll-spy>
+        <!-- ******* Sorteo Digital ******** -->
+        <h2>Sorteo Digital</h2>
+        <ul class="players">
+          <li class="player">juan</li>
+          <li class="player">camila</li>
+          <li class="player">daniela</li>
+          <li class="player">junior</li>
+          <li class="player">federico</li>
+          <li class="player">felipe</li>
+          <li class="player">damian</li>
+          <li class="player">federico</li>
+          <li class="player">sanchez</li>
+          <li class="player">johinner</li>
+        </ul>
+        <button id="winner-btn">Obtener Ganador</button>
+      </section>
+      <section id="seccion8" class="section" data-scroll-spy>
+        <!-- ******* Responsive Slider ******** -->
+        <h2>Responsive Slider</h2>
+        <div class="slider">
+          <div class="slider-slides">
+            <div class="slider-slide active">
+              <img src="https://placeimg.com/400/400/animals" alt="animal">
+            </div>
+            <div class="slider-slide">
+              <h4>Diapositiva 2</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officia nam sint vero, a non magnam consequatur
+                explicabo possimus sed ab maxime suscipit dolorem eius
+                temporibus quia saepe est beatae provident!</p>
+            </div>
+            <div class="slider-slide">
+              <img src="https://placeimg.com/400/400/people" alt="people">
+            </div>
+            <div class="slider-slide">
+              <h4>Diapositiva 4</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+                porro mollitia, molestiae consequuntur,
+                corporis culpa dolorum optio assumenda accusantium nulla maiores
+                repellendus! Nihil alias nesciunt impedit
+                fugit amet, itaque suscipit.</p>
+            </div>
+          </div>
+          <div class="slider-btns">
+            <a class="prev" href="#">&laquo;</a>
+            <a class="next" href="#">&raquo;</a>
+          </div>
+        </div>
+      </section>
+      <section id="seccion9" class="section" data-scroll-spy>
+        <h2>Video Inteligente</h2>
+        <video
+          src="./assets/coverr--07-022-22-girl-with-analog-camera_0009-7367-1080p.mp4"
+          muted controls loop data-smart-video></video>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <video
+          src="./assets/coverr--07-022-22-girl-with-analog-camera_0009-7367-1080p.mp4"
+          muted controls loop data-smart-video></video>
+      </section>
+      <section id="seccion10" class="section" data-scroll-spy>
+        <h2>Validaciones de Formularios</h2>
+        <form class="contact-form" method="POST" action="https://formsubmit.co/johimadacor@gmail.com" target="_blank">
+          <legend>Envianos tu comentario</legend>
+          <input type="text" name="name" placeholder="Escribe tu Nombre"
+            title="Nombre solo acepta letras y espacio en blanco" required
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+          <input type="email" name="email" placeholder="Escribe tu Email"
+            title="Email incorrecto" required
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+          <input type="text" name="subject" placeholder="Asunto a tratar"
+            required title="El Asunto es Requerido">
+          <textarea name="comments" cols="50" rows="5" placeholder="Escribe tu comentario" data-pattern="^.{1,255}$" title="Tu comentario no debe
+            execeder los 255 caracteres" required></textarea>
+          <input type="submit" value="Enviar">
+          <div class="contact-form-loader none">
+            <img src="./assets/loader.svg" alt="Cargando">
+          </div>
+          <div class="contact-form-response none">
+            <p>Los datos han sido enviados</p>
+          </div>
+        </form>
+      </section>
+
+      <section id="seccion11" class="section" data-scroll-spy>
+        <!-- ***** voz del navegador ****** -->
+        <h2>Narrador</h2>
+        <select id="speech-select">
+          <option value="">---Elige una voz</option>
+        </select>
+        <br><br>
+        <textarea id="speech-text" cols="50" rows="5" placeholder="Ingresa texto para leer."></textarea>
+        <br><br>
+        <button id="speech-btn">Leer Texto</button>
+      </section>
+
+      <section id="seccion12" class="section" data-scroll-spy>
+        <h2>Cuenta Regresiva</h2>
+        <div id="countdown"></div>
+      </section>
+
+      <section id="seccion13" class="section" data-scroll-spy>
+    <!-- ****** Eventos del Teclado (movimientos y colisiones) ****** -->
+        <h2>Eventos del Teclado (movimientos y colisiones)</h2>
+        <article class="stage">
+          <div class="ball"></div>
+        </article>
+        
+      </section>
+    </main>
 
 
-  <!-- ******** Responsive Tester ******** -->
-  <h2>Responsive Tester</h2>
-  <form id="responsive-tester">
-    <input type="url" placeholder="URL" name="direccion" required>
-    <br>
-    <input type="text" placeholder="ancho" name="ancho" required>
-    <br>
-    <input type="text" placeholder="alto" name="alto" required>
-    <br>
-    <input type="submit" name="probar" value="Probar">
-    <input type="button" name="cerrar" value="Cerrar">
-  </form>
-  
-  <!-- ******* Deteccion de Dispositivos (User Agent) ******** -->
-  <h2>Deteccion de Dispositivos <br>(User Agent)</h2>
-  <div id="user-device"></div>
 
-  <!-- ******* Deteccion de camara wed ******** -->
-  <h2>Deteccion de la camara wed</h2>
-  <video id="wedcam"></video>
+    <!-- ******** scrollTopButton ******** -->
+    <button class="scroll-top-btn hidden">&#11014</button>
 
-  <!-- ******* Geolocalizacion ******** -->
-  <h2>Geolocalizacion</h2>
-  <div id="geolocation"></div>
-
-  <!-- ******* Filtro de Imagenes ******** -->
-  <h2>Filtro de Imaganes</h2>
-  <input id="card-filter" type="search" placeholder="Buscar.." class="card-filter">
-  <article class="cards">
-    <figure class="card">
-      <img src="https://placeimg.com/200/200/natura"  alt="Natura">
-      <figcaption>Natura</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="https://placeimg.com/200/200/any"  alt="Any">
-      <figcaption>Any</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="https://placeimg.com/200/200/animals"  alt="animals">
-      <figcaption>Animals</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="https://placeimg.com/200/200/tech"  alt="tech">
-      <figcaption>tech</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="https://placeimg.com/200/200/people"  alt="people">
-      <figcaption>People</figcaption>
-    </figure>
-  </article>
-
-   <!-- ******* Sorteo Digital ******** -->
-  <h2>Sorteo Digital</h2>
-  <ul class="players">
-    <li class="player">juan</li>
-    <li class="player">camila</li>
-    <li class="player">daniela</li>
-    <li class="player">junior</li>
-    <li class="player">federico</li>
-    <li class="player">felipe</li>
-    <li class="player">damian</li>
-    <li class="player">federico</li>
-    <li class="player">sanchez</li>
-    <li class="player">johinner</li>
-  </ul>
-  <button id="winner-btn">Obtener Ganador</button>
-
-  <!-- ******** scrollTopButton ******** -->
-  <button class="scroll-top-btn hidden">&#11014</button>
-
-  <!-- ******** Button effect dark ****** -->
-  <button class="scroll-top-btn dark-theme-btn">🌙</button>
-  <script src="/js/main.js" type="module"></script>
-</body>
+    <!-- ******** Button effect dark ****** -->
+    <button class="scroll-top-btn dark-theme-btn">🌙</button>
+    <script src="./main.js" type="module"></script>
+  </body>
 
 </html>
