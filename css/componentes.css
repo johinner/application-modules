@@ -112,6 +112,7 @@
 }
 
 /* ==== filtro de imagenes ==== */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -137,6 +138,9 @@
   visibility: hidden;
   opacity: 0;
   order: 1;
+}
+.loader {
+  margin-top: 30px;
 }
 
 /* ==== Responsive Slider  ==== */
@@ -170,7 +174,7 @@
 .slider-slide img {
   height: inherit;
   width: inherit;
-  object-fit: cover;
+  object-fit: contain;
   object-position: 50% 0%;
 }
 .slider-btns {

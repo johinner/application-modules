@@ -16,6 +16,7 @@ import { moveBall } from "./components/teclado.js";
 import darkTheme from "./components/tema_oscuro.js";
 import contactFromValidations from "./components/validaciones_fromulario.js";
 import smartVideo from "./components/video_inteligente.js";
+import ajaxMarvel from "./components/ajax_imagenes.js";
 
 const d = document;
 
@@ -46,6 +47,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   smartVideo();
   contactFromValidations();
   countdown("countdown", "05 06,2023, 0:0:00", "Feliz cumple Johinner");
+  ajaxMarvel(".cards");
 });
 
 darkTheme(".dark-theme-btn", "dark-mode");
